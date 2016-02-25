@@ -17,6 +17,9 @@ sap.ui.define([], function() {
 	});
 
 	opaTest("Should be able to load 10 more items", function(Given, When, Then) {
+		// Arrangements
+		Given.iStartMyApp();
+		
 		//Actions
 		When.onTheWorklistPage.iPressOnMoreData();
 
